@@ -1,98 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victoria Mwende Portfolio</title>
+
+  <!-- Roboto font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Home Section -->
-  <section id="home">
-    <header>
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is a space where I showcase my work and accomplishments.</p>
-    </header>
-    <!-- Adding a video -->
-    <video controls>
-      <source src="video/promo.mp4" type="video/mp4">
-    </video>
-  </section>
+  <main>
 
-  <!-- About Section -->
-  <section id="about">
-    <header>
+    <!-- ABOUT -->
+    <section class="section" id="about">
       <h2>About Me</h2>
-    </header>
-    <p>Hello! I'm a passionate student with a focus on web  developmenttechnologies. I love solving problems and building solutions that make a difference.</p>
-    <ul>
-      <li>Skills: HTML, Css</li>
-      <li>Hobbies: Coding, Reading, Traveling</li>
-    </ul>
-  </section>
+      <p>
+        I'm Victoria, a passionate web developer student. I want to bring creative solutions
+        to life using intuitive interfaces, clean code, and a touch of Kenyan coastal culture. I specialize
+        in both design and web development and enjoy building tools that make life easier and more beautiful.
+      </p>
+    </section>
 
-  <!-- Work Section -->
-  <section id="work">
-    <header>
-      <h2>My Work</h2>
-    </header>
-    <ul>
-      <li><a href="project1.html">Project 1: Portfolio Website</a></li>
-      <li><a href="project2.html">Project 2: E-commerce Platform</a></li>
-    </ul>
-  </section>
-
-  <!-- Resume Section -->
-  <section id="resume">
-    <header>
+    <!-- RESUME -->
+    <section class="section" id="resume">
       <h2>Resume</h2>
-    </header>
-    <p>Download my <a href="resume.pdf" download>Resume</a>.</p>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <header>
-      <h2>Contact Me</h2>
-    </header>
-    <form action="submit_form.php" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+      <div class="resume-item">
+        <h3> Web Student - Present</h3>
+        <p><strong>2025 - Present</strong></p>
+        <p>I have Worked on multiple web projects including login page and portofolio to help me learn web development.</p>
+      </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <div class="resume-item">
+        <h3>Social Media Manager - Freelance</h3>
+        <p><strong>2022 - Now</strong></p>
+        <p>I design modern and iconic branding videos, such as the Tusker Beer events,Red Bull Dance events , applying industry trends and visual storytelling.</p>
+      </div>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+    </section>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2>My Projects</h2>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </footer>
+      <div class="project">
+        <p>Web Development</p>
+        <h3>Login Page</h3>
+        <a  class="btn">Project Details</a>
+      </div>
+
+      <div class="project">
+        <p>Web Development</p>
+        <h3>My-Portfolio</h3>
+        <a class="btn">Project Details</a>
+      </div>
+
+      <div class="project">
+        <p>Design and Media</p>
+        <h3>Tusker Beer Events</h3>
+        <a href="https://www.behance.net/gallery/172932091/Tusker-Lager-Logo-Redesign?" class="btn">Project Details</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2>Get In Touch</h2>
+      <form class="contact" method="post">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number" />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      
+    </section>
+    <!-- Footer Section -->
+    <footer class="text-white text-center text-lg-start" style="background-color: #929fba;">
+        <div class="container p-4">
+          <div class="row">
+            
+            <!-- Column 1: About the Company -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">My Portfolio</h6>
+            </div>
     
+            <!-- Column 2: Quick Links -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Quick Links</h6>
+              <p><a href="#about" class="text-white">About</a></p>
+              <p><a href="#resume" class="text-white">Resume</a></p>
+              <p><a href="#projects" class="text-white">Projects</a></p>
+              <p><a href="#contact " class="text-white">Contact</a></p>
+            </div>
+      
+            <!-- Column 3: Contact Info -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <p><i class="fas fa-map-marker-alt me-2"></i> Coast, Kenya</p>
+              <p><i class="fas fa-envelope me-2"></i> contact@open.com</p>
+              <p><i class="fas fa-phone me-2"></i> +254795456142</p>
+            </div>
+      
+            <!-- Column 4: Social Media -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Follow Us</h6>
+              <a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+            
+              <a href="#" class="btn btn-primary btn-floating m-1" style="background-color: #ffF;"> <i class="fab fa-tiktok" style="color: rgb(6, 5, 5);"></i></a>
+            
+                    <a href="#" class="btn btn-primary btn-floating m-1" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);"><i class="fab fa-instagram"></i></a>
+                  
+            </div>
+      
+          </div>
+        </div>
+      
+        <!-- Copyright Section -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          &copy; 2025 Victoria Mwende. All Rights Reserved.
+        </div>
+      </footer>
+        </main>
 
 </body>
 </html>
